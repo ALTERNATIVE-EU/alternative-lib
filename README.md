@@ -1,9 +1,16 @@
 # Python library to interact with the ALTERNATIVE platform
 
+## Requirements
+Generate an API Token in the platform:
+1. From the user page click on API Tokens
+2. Create API Tokens
+3. Copy and keep API Token, to be used to access private datasets
+
 ## Build and install library
-1. Clone the repository
-2. In the folder run:
+In Terminal, execute these commands:
 ```
+git clone https://github.com/ALTERNATIVE-EU/alternative-lib.git
+cd alternative-lib
 python3 setup.py bdist_wheel
 pip install dist/alternative_lib-0.1.0-py3-none-any.whl
 ```

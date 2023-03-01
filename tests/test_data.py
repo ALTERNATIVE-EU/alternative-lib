@@ -5,7 +5,8 @@ TEST_DATASETS = [
         "id": "f415ddae-2185-4f16-bce9-3a855f0275cb",
         "organization": {
             "id": "459f9611-527e-4f62-a75d-5ed136d8c6cb",
-            "title": "test-org",
+            "name": "test-org",
+            "title": "Test Organisation",
         },
         "private": False,
         "title": "test-data-4",
@@ -17,22 +18,27 @@ TEST_DATASETS = [
             {
                 "display_name": "test-group-1",
                 "id": "83594007-fd43-4465-a05e-2197aab964ad",
+                "name": "Test Group 1",
             },
             {
                 "display_name": "test-group-2",
                 "id": "a3799d68-a855-4846-82d2-8b067c27bcf5",
+                "name": "Test Group 2",
             },
         ],
         "tags": [
             {
                 "display_name": "tag1",
                 "id": "6ea86a15-7724-4865-beb3-04c219b182ef",
+                "name": "Test TAG 1",
             },
             {
                 "display_name": "tag2",
                 "id": "629f9aca-a91b-40f8-a2a5-c3a55324a8cb",
+                "name": "Test TAG 2",
             },
         ],
+        "age_type": ['Young'],
     },
     {
         "author": "test2",
@@ -40,7 +46,8 @@ TEST_DATASETS = [
         "id": "ef3c4d75-06fd-4fb0-9c0e-3ba86285df5e",
         "organization": {
             "id": "62388cd5-ab03-4d59-8490-94fb8243b000",
-            "title": "test-org-2",
+            "name": "test-org-2",
+            "title": "Test Organisation 2",
         },
         "private": False,
         "title": "test-data-2",
@@ -49,12 +56,14 @@ TEST_DATASETS = [
             {
                 "display_name": "test-group-2",
                 "id": "a3799d68-a855-4846-82d2-8b067c27bcf5",
+                "name": "Test Group 2",
             }
         ],
         "tags": [
             {
                 "display_name": "tag2",
                 "id": "629f9aca-a91b-40f8-a2a5-c3a55324a8cb",
+                "name": "Test TAG 2",
             }
         ],
     },
@@ -64,7 +73,8 @@ TEST_DATASETS = [
         "id": "2aa7425e-f329-4481-866f-ba93bb2dd8f0",
         "organization": {
             "id": "bb3e8237-4875-4fc3-83b9-8c94172cd20f",
-            "title": "test-org-1",
+            "name": "test-org-1",
+            "title": "Test Organisation 1",
         },
         "private": False,
         "title": "test-data-1",
@@ -73,12 +83,14 @@ TEST_DATASETS = [
             {
                 "display_name": "test-group-1",
                 "id": "83594007-fd43-4465-a05e-2197aab964ad",
+                "name": "Test Group 1",
             }
         ],
         "tags": [
             {
                 "display_name": "tag1",
                 "id": "6ea86a15-7724-4865-beb3-04c219b182ef",
+                "name": "Test TAG 1",
             }
         ],
     },
@@ -88,7 +100,8 @@ TEST_DATASETS = [
         "id": "64b65d83-4ab7-42dd-9c27-94db09682331",
         "organization": {
             "id": "459f9611-527e-4f62-a75d-5ed136d8c6cb",
-            "title": "test-org",
+            "name": "test-org",
+            "title": "Test Organisation",
         },
         "private": True,
         "title": "test-data-3",

@@ -88,7 +88,7 @@ class TestGetDatasets(unittest.TestCase):
     def test_get_datasets_in_groups(self):
         # Datasets in group -> test-group-2
         metadata = {
-            'groups': ['test-group-2']
+            'groups': ['Test Group 2']
         }
         results = test_client.get_datasets(
             datasets=TEST_DATASETS,
@@ -120,7 +120,7 @@ class TestGetDatasets(unittest.TestCase):
     def test_get_datasets_with_tags(self):
         # Datasets with tag -> tag1
         metadata = {
-            'tags': ['tag1']
+            'tags': ['Test TAG 1']
         }
         results = test_client.get_datasets(
             datasets=TEST_DATASETS,
@@ -152,13 +152,13 @@ class TestGetDatasets(unittest.TestCase):
     def test_get_datasets_in_organization(self):
         # Datasets in organization -> test-org-1
         metadata = {
-            'organization': 'test-org-1'
+            'organization': 'Test Organisation'
         }
         results = test_client.get_datasets(
             datasets=TEST_DATASETS,
             metadata=metadata
         )
-        self.assertEqual(len(results), 1)
+        self.assertEqual(len(results), 2)
 
         # Datasets in organization -> test-org-1 or test-org-2
         metadata = {
@@ -169,6 +169,17 @@ class TestGetDatasets(unittest.TestCase):
             metadata=metadata
         )
         self.assertEqual(len(results), 2)
+
+    def test_get_datasets_experiment_field(self):
+        # Datasets with experiment age type -> young
+        metadata = {
+            "age_type": ['Young']
+        }
+        results = test_client.get_datasets(
+            datasets=TEST_DATASETS,
+            metadata=metadata
+        )
+        self.assertEqual(len(results), 1)
 
     def test_get_datasets_more_metadata(self):
         # Datasets with author -> test1

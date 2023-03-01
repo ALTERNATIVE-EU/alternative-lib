@@ -8,6 +8,11 @@ Generate an API Token in the platform:
 
 ## Build and install library
 In Terminal, execute these commands:
+- Normal installation:
+```
+pip install alternative-lib
+```
+- For development purposes:
 ```
 git clone https://github.com/ALTERNATIVE-EU/alternative-lib.git
 cd alternative-lib

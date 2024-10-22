@@ -16,8 +16,8 @@ pip install alternative-lib
 ```
 git clone https://github.com/ALTERNATIVE-EU/alternative-lib.git
 cd alternative-lib
-python3 setup.py bdist_wheel
-pip install dist/alternative_lib-0.1.0-py3-none-any.whl
+python setup.py sdist bdist_wheel
+pip install dist/alternative_lib-0.1.1-py3-none-any.whl
 ```
 
 ## Usage

@@ -5,8 +5,8 @@ import ckanapi
 class AlternativeClient:
 
     api_token = ""
-    site_url = "https://alternative.ebdfbc2ec9.app.daiteap.com"
-    user_agent = "ckanapi/1.0 (+https://alternative.ebdfbc2ec9.app.daiteap.com)"
+    site_url = "https://platform.alternative-project.eu"
+    user_agent = "ckanapi/1.0 (+https://platform.alternative-project.eu)"
 
     def __init__(self, api_token=None, site_url=None):
         if api_token:

@@ -10,7 +10,7 @@ Generate an API Token in the platform:
 In Terminal, execute these commands:
 - Normal installation:
 ```
-pip install alternative-lib
+pip install alternative-eu-lib
 ```
 - For development purposes:
 ```

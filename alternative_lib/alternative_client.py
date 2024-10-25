@@ -106,9 +106,6 @@ class AlternativeClient:
         else:
             response = requests.get(resource_url)
 
-        download_url = response.text.split("url='")[1].split("'")[0]
-        response = requests.get(download_url)
-
         # Write to file
         with open(path + filename, "wb") as text_file:
             text_file.write(response.content)
